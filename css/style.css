@@ -8,6 +8,8 @@ html, body {
 	font-size: 12px;
 	line-height: 1.5em;
 	color: #ccc;
+	overflow: hidden;
+	position: fixed;
 }
 #controls {
 	width: 0;
