@@ -7,8 +7,7 @@ html, body {
 	font-family: Helvetica Neue, Arial, sans-serif;
 	font-size: 12px;
 	line-height: 1.5em;
-	color: #ccc;
-	overflow: hidden;
+	color: black;
 	position: fixed;
 }
 #controls {
@@ -30,18 +29,19 @@ html, body {
 #stage {
 	width: 900px;
 	height: 500px;
-	background-color: #000;
+	background-color: #FEB8E3;
 	-moz-box-shadow: 0 0 15px rgba(0, 0, 0, .6);
 	-webkit-box-shadow: 0 0 15px rgba(0, 0, 0, .6);
 	box-shadow: 0 0 15px rgba(0, 0, 0, .6);
 	visibility: hidden;
 	position: absolute;
+	z-index: 10;
 }
 #overlay {
 	width: 100%;
 	z-index: 10;
 	font-size: 20px;
-	position:absolute;
+	position: relative;
 	top:50%;
 	height:50px;
 	margin-top:-25px;
@@ -51,8 +51,9 @@ html, body {
 h1 {
 	font-family: 'Lobster', arial, serif;
 	font-size: 38px;
-	color: #fff;
+	color: black;
 	font-weight:normal;
+	z-index: 999;
 }
 a {
 	color: #fff;
@@ -65,14 +66,12 @@ a {
 	cursor: pointer;
 }
 .button {
-	border: none;
-	color: white;
-	padding: 16px 32px;
+	position: absolute;
+	top: 10px;
+	width: 100%;
 	text-align: center;
-	text-decoration: none;
-	display: inline-block;
-	font-size: 16px;
-	margin: 4px 2px;
-	transition-duration: 0.4s;
-	cursor: pointer;
+	z-index: 50;
+	display: block;
+	color: black;
+	font-family: 'PT Serif', serif;
 }
