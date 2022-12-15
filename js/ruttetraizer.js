@@ -24,9 +24,9 @@ var _stage,
 	//VARS ACCESSIBLE BY GUI
 	_guiOptions = {
 		stageSize: 1,
-		scale: 3,
+		scale: 2,
 		scanStep: 2,
-		lineThickness: 3,
+		lineThickness: 2,
 		opacity: 1.0,
 		depth: 60,
 		autoRotate: false
@@ -120,7 +120,6 @@ function initWebGL() {
 	_camera = new THREE.Camera(75, 16 / 9, 1, 3000);
 	_camera.position.z = -1000;
 	_scene = new THREE.Scene();
-
 
 	//init renderer
 	_renderer = new THREE.WebGLRenderer({
