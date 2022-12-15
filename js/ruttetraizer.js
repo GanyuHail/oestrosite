@@ -24,11 +24,11 @@ var _stage,
 	//VARS ACCESSIBLE BY GUI
 	_guiOptions = {
 		stageSize: 1,
-		scale: 3.5,
+		scale: 3,
 		scanStep: 2,
-		lineThickness: 1.9,
+		lineThickness: 4,
 		opacity: 1.0,
-		depth: 61,
+		depth: 60,
 		autoRotate: false
 	};
 
@@ -112,7 +112,6 @@ $(document).ready(function () {
 		initWebGL();
 	}
 
-
 });
 
 function initWebGL() {
@@ -121,6 +120,7 @@ function initWebGL() {
 	_camera = new THREE.Camera(75, 16 / 9, 1, 3000);
 	_camera.position.z = -1000;
 	_scene = new THREE.Scene();
+	_scene.backgroundColor = "pink";
 
 	//init renderer
 	_renderer = new THREE.WebGLRenderer({
@@ -128,7 +128,10 @@ function initWebGL() {
 		clearAlpha: 1,
 		sortObjects: false,
 		sortElements: false
+		
 	});
+
+	_renderer.setClearColorHex( 0xFEB8E3, 1 );
 
 	_lineHolder = new THREE.Object3D();
 	_scene.addObject(_lineHolder);
