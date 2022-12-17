@@ -7,12 +7,9 @@ html,
 body {
 	width: 100%;
 	height: 100%;
-	background-color: #333;
+	background-color: #FEB8E3;
 	margin: 0px;
 	overflow: hidden;
-	font-family: Helvetica Neue, Arial, sans-serif;
-	font-size: 12px;
-	line-height: 1.5em;
 	color: black;
 	position: fixed;
 }
@@ -20,18 +17,15 @@ body {
 #controls {
 	width: 0;
 	height: 100%;
-	background-color: #111;
+	background-color: #FEB8E3;
 	float: left;
 	margin: 0;
-	/* -moz-box-shadow: 0 0 15px rgba(0, 0, 0, .6);
-	-webkit-box-shadow: 0 0 15px rgba(0, 0, 0, .6);
-	box-shadow: 0 0 15px rgba(0, 0, 0, .6); */
 }
 
 #container {
 	width: 100%;
 	height: 100%;
-	background-color: #222;
+	background-color: #FEB8E3;
 	margin: 0 0 0 300px;
 }
 
@@ -39,9 +33,9 @@ body {
 	width: 900px;
 	height: 500px;
 	background-color: #FEB8E3;
-	-moz-box-shadow: 0 0 15px rgba(0, 0, 0, .6);
+	/* -moz-box-shadow: 0 0 15px rgba(0, 0, 0, .6);
 	-webkit-box-shadow: 0 0 15px rgba(0, 0, 0, .6);
-	box-shadow: 0 0 15px rgba(0, 0, 0, .6);
+	box-shadow: 0 0 15px rgba(0, 0, 0, .6); */
 	visibility: hidden;
 	position: absolute;
 	z-index: 10;
@@ -60,10 +54,6 @@ body {
 }
 
 h1 {
-	font-family: 'Lobster', arial, serif;
-	font-size: 38px;
-	color: black;
-	font-weight: normal;
 	z-index: 999;
 }
 
@@ -73,7 +63,7 @@ a {
 }
 
 #overlay h1 {
-	color: #666;
+	color: #FEB8E3;
 }
 
 #loadSample {
@@ -81,12 +71,12 @@ a {
 }
 
 #button {
-	
 	bottom: 30%;
-	left: 50%;
+	left: 45%;
 	text-align: center;
 	z-index: 999;
-	/* display: inline-block; */
+  border-radius: 10px;
+	display: inline-block;
 	/* color: black;
 	font-family: 'EXE'; */
 	/* text-transform: lowercase; */
@@ -94,12 +84,11 @@ a {
   height: 76px;
   line-height: 78px;
   font-size: 20px;
-  font-family: 'PTSerif', sans-serif;
-  background: linear-gradient(45deg, transparent 5%, pink 5%);
-  border: 0;
-  color: #fff;
+  font-family: 'EXE';
+  background: linear-gradient(45deg, #FEB8E3, #EFE7FD);
+  border: none;
   letter-spacing: 3px;
-  box-shadow: 6px 0px 0px #00E6F6;
+  box-shadow: 6px 0px 0px #EFE7FD;
   outline: transparent;
   position: relative;
   user-select: none;
@@ -115,15 +104,16 @@ a {
   --slice-4: inset(40% -6px 43% 0);
   --slice-5: inset(80% -6px 5% 0);
   
-  content: 'ALTERNATE TEXT';
+  content: '💕';
   display: block;
   position: absolute;
+  border-radius: 10px;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(45deg, transparent 3%, #00E6F6 3%, #00E6F6 5%, #FF013C 5%);
-  text-shadow: -3px -3px 0px #F8F005, 3px 3px 0px #00E6F6;
+  background: linear-gradient(45deg, transparent 3%, #F2FCFD 3%, #F2FCFD 5%, #FFE3F4 5%);
+  text-shadow: -3px -3px 0px #F8F005, 3px 3px 0px #F2FCFD;
   clip-path: var(--slice-0);
 }
 
@@ -185,5 +175,15 @@ a {
     width: 200px;
     height: 86px;
     line-height: 88px;
+  }
+}
+
+@media (max-width: 767px) {
+  #button,
+  #button:after {
+    width: 200px;
+    height: 86px;
+    line-height: 88px;
+    left: 27%;
   }
 }
