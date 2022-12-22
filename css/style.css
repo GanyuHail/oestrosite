@@ -112,7 +112,7 @@ a {
   visibility: visible;
   /* position: relative; */
   user-select: none;
-  -webkit-user-select: none;
+  /* -webkit-user-select: none; */
   touch-action: manipulation;
   cursor: url('./hover.cur'), auto;
 }
