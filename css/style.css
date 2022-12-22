@@ -137,6 +137,28 @@ a {
   clip-path: var(--slice-0);
 }
 
+
+/* @media (min-width: 768px) {
+  #button,
+  #button:after {
+    width: auto;
+    height: 50px;
+    line-height: 50px;
+  }
+} 
+
+@media (max-width: 767px) {
+  #button,
+  #button:after {
+    width: auto;
+    bottom: 30%;
+    height: 40px;
+    line-height: 40px;
+    left: 50%;
+    font-size: 15px;
+  }
+} */
+
 #button:hover:after {
   animation: 1s glitch;
   animation-timing-function: steps(2, end);
@@ -186,27 +208,5 @@ a {
   100% {
     clip-path: var(--slice-1);
     transform: translate(0);
-  }
-}
-
-/* @media (min-width: 768px) {
-  #button,
-  #button:after {
-    width: auto;
-    height: 50px;
-    line-height: 50px;
-
-  }
-} */
-
-@media (max-width: 767px) {
-  #button,
-  #button:after {
-    width: auto;
-    bottom: 30%;
-    height: 40px;
-    line-height: 40px;
-    left: 50%;
-    font-size: 15px;
   }
 }
