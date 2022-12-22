@@ -32,8 +32,7 @@ body {
 #container {
 	width: 1%;
 	background-color: #FEB8E3;
-	margin: 0 0 0 300px;
-  
+	margin: 0 0 0 0px;
 }
 
 #stage {
