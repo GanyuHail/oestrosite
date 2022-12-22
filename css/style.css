@@ -148,8 +148,7 @@ a {
 
 @media all and (max-width: 767px) {
 
-  #button,
-  #button:after {
+  #button {
     width: auto;
     /* bottom: 60%; */
     height: 40px;
