@@ -154,7 +154,7 @@ a {
     line-height: 40px;
     left: 50%;
     font-size: 15px;
-    position: absolute;
+    /* position: absolute; */
     visibility: visible !important;
   }
 }
