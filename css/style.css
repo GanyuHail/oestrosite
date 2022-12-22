@@ -77,13 +77,25 @@ a {
 	cursor: pointer;
 }
 
-#button {
-	bottom: 30%;
-	left: 42%;
+#button-container { 
+  bottom: 30%;
+  width: 100%;
+	/* left: 50%; */
 	text-align: center;
 	z-index: 999;
+  display: inline-block;
+  position: relative;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+#button {
+	/* bottom: 30%;
+	text-align: center;
+	z-index: 999; */
+  left: 50%;
   border-radius: 5px;
-	display: inline-block;
+	/* display: inline-block; */
 	/* text-transform: lowercase; */
   width: auto;
   height: 50px;
@@ -96,10 +108,11 @@ a {
   border: none;
   box-shadow: 6px 0px 0px #EFE7FD;
   outline: transparent;
-  position: relative;
+  /* position: relative; */
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
+
 }
 
 #button:after {
@@ -111,11 +124,14 @@ a {
   --slice-5: inset(80% -6px 5% 0);
   
   content: '💕';
+  width: 100px; 
+  left: 50%;
+  text-align: center;
   display: block;
   position: absolute;
   border-radius: 5px;
   top: 0;
-  left: 0;
+ 
   right: 0;
   bottom: 0;
   background: linear-gradient(45deg, transparent 3%, #F2FCFD 3%, #F2FCFD 5%, #FFE3F4 5%);
@@ -190,9 +206,9 @@ a {
   #button:after {
     width: auto;
     bottom: 30%;
-    height: 50px;
-    line-height: 50px;
-    left: 9em;
+    height: 40px;
+    line-height: 40px;
+    left: 50%;
     font-size: 15px;
   }
 }
