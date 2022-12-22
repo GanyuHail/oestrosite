@@ -3,9 +3,11 @@
 	src: url(https://static1.squarespace.com/static/6229e7465403903cfd9d23ed/t/6391c75c5e6b224f735385a6/1670498140457/excelorate-font+%281%29.otf);
 }
 
-canvas{
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+/* canvas{
   cursor: url('https://imgur.com/9UksORj'), auto;	
-}
+} */
 
 html,
 body {
@@ -16,6 +18,7 @@ body {
 	overflow: hidden;
 	color: black;
 	position: fixed;
+  cursor: url('https://imgur.com/9UksORj'), auto;	
 }
 
 #controls {
@@ -81,18 +84,16 @@ a {
 	z-index: 999;
   border-radius: 10px;
 	display: inline-block;
-	/* color: black;
-	font-family: 'EXE'; */
 	/* text-transform: lowercase; */
   width: auto;
   height: 76px;
   line-height: 78px;
   font-size: 20px;
-  font-family: 'EXE';
+  font-family: 'Righteous', cursive;
+  letter-spacing: 0.03em;
   color: white;
   background: linear-gradient(45deg, #FEB8E3, #EFE7FD) !important;
   border: none;
-  letter-spacing: 3px;
   box-shadow: 6px 0px 0px #EFE7FD;
   outline: transparent;
   position: relative;
