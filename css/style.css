@@ -145,7 +145,7 @@ a {
   }
 /* }  */
 
-@media (max-width: 767px) {
+@media all and (max-width: 767px) {
 
   #button,
   #button:after {
@@ -153,7 +153,7 @@ a {
     /* bottom: 50px; */
     height: 40px;
     line-height: 40px;
-    /* left: 50%; */
+    left: 50%;
     font-size: 15px;
     position: absolute;
     visibility: visible !important;
