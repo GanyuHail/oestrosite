@@ -1,102 +1,102 @@
 @font-face {
-	font-family: 'EXE';
-	src: url(https://static1.squarespace.com/static/6229e7465403903cfd9d23ed/t/6391c75c5e6b224f735385a6/1670498140457/excelorate-font+%281%29.otf);
+  font-family: 'EXE';
+  src: url(https://static1.squarespace.com/static/6229e7465403903cfd9d23ed/t/6391c75c5e6b224f735385a6/1670498140457/excelorate-font+%281%29.otf);
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
 
 html,
 body {
-	width: 100%;
-	height: 100%;
-	background-color: #FEB8E3;
-	margin: 0px;
-	overflow: hidden;
-	color: black;
-	position: fixed;
-  cursor: url('./custom.cur'), auto;	
+  width: 100%;
+  height: 100%;
+  background-color: #FEB8E3;
+  margin: 0px;
+  overflow: hidden;
+  color: black;
+  position: fixed;
+  cursor: url('./custom.cur'), auto;
 }
 
 #controls {
-	width: 0;
-	height: 100%;
-	background-color: #FEB8E3;
-	float: left;
-	margin: 0;
+  width: 0;
+  height: 100%;
+  background-color: #FEB8E3;
+  float: left;
+  margin: 0;
 }
 
-.container{
-  width: 0px; 
+.container {
+  width: 0px;
 }
 
 #container {
-	width: 1%;
-	background-color: #FEB8E3;
-	margin: 0 0 0 0px;
+  width: 1%;
+  background-color: #FEB8E3;
+  margin: 0 0 0 0px;
 }
 
 #stage {
-	width: 900px;
-	height: 500px;
-	background-color: #FEB8E3;
-	/* -moz-box-shadow: 0 0 15px rgba(0, 0, 0, .6);
+  width: 900px;
+  height: 500px;
+  background-color: #FEB8E3;
+  /* -moz-box-shadow: 0 0 15px rgba(0, 0, 0, .6);
 	-webkit-box-shadow: 0 0 15px rgba(0, 0, 0, .6);
 	box-shadow: 0 0 15px rgba(0, 0, 0, .6); */
-	visibility: hidden;
-	position: absolute;
-	z-index: 10;
+  visibility: hidden;
+  position: absolute;
+  z-index: 10;
 }
 
 #overlay {
-	width: 100%;
-	z-index: 10;
-	font-size: 20px;
-	position: relative;
-	top: 50%;
-	height: 50px;
-	margin-top: -25px;
-	font-weight: bold;
-	text-align: center;
+  width: 100%;
+  z-index: 10;
+  font-size: 20px;
+  position: relative;
+  top: 50%;
+  height: 50px;
+  margin-top: -25px;
+  font-weight: bold;
+  text-align: center;
 }
 
 h1 {
-	z-index: 999;
+  z-index: 999;
 }
 
 a {
-	color: #fff;
-	text-decoration: none;
+  color: #fff;
+  text-decoration: none;
 }
 
 #overlay h1 {
-	color: #FEB8E3;
+  color: #FEB8E3;
 }
 
 /* #loadSample {
 	cursor: pointer;
 } */
 
-#button-container {  
+#button-container {
   bottom: 30%;
   width: 100%;
-	
-	text-align: center;
-	z-index: 999;
+
+  text-align: center;
+  z-index: 999;
   display: inline-block;
   position: relative;
-  margin-left:auto;
-  margin-right:auto;
+  margin-left: auto;
+  margin-right: auto;
   visibility: visible;
 }
 
 #button {
-	/* bottom: 30%;
+  /* bottom: 30%;
 	text-align: center;
 	z-index: 999; */
   left: 50%;
   border-radius: 5px;
-	/* display: inline-block; */
-	/* text-transform: lowercase; */
+  /* display: inline-block; */
+  /* text-transform: lowercase; */
   width: auto;
   height: 50px;
   line-height: 50px;
@@ -113,7 +113,7 @@ a {
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
-  cursor: url('./hover.cur'), auto;	
+  cursor: url('./hover.cur'), auto;
 }
 
 #button:after {
@@ -123,7 +123,7 @@ a {
   --slice-3: inset(10% -6px 85% 0);
   --slice-4: inset(40% -6px 43% 0);
   --slice-5: inset(80% -6px 5% 0);
-  
+
   content: '  💕  ';
   width: auto;
   left: 50%;
@@ -146,16 +146,20 @@ a {
 /* }  */
 
 @media (max-width: 767px) {
+
   #button,
   #button:after {
     width: auto;
-    bottom: 30%;
+    /* bottom: 50px; */
     height: 40px;
     line-height: 40px;
-    left: 50%;
+    /* left: 50%; */
     font-size: 15px;
     position: absolute;
     visibility: visible !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
 
@@ -169,42 +173,52 @@ a {
     clip-path: var(--slice-1);
     transform: translate(-20px, -10px);
   }
+
   10% {
     clip-path: var(--slice-3);
     transform: translate(10px, 10px);
   }
+
   20% {
     clip-path: var(--slice-1);
     transform: translate(-10px, 10px);
   }
+
   30% {
     clip-path: var(--slice-3);
     transform: translate(0px, 5px);
   }
+
   40% {
     clip-path: var(--slice-2);
     transform: translate(-5px, 0px);
   }
+
   50% {
     clip-path: var(--slice-3);
     transform: translate(5px, 0px);
   }
+
   60% {
     clip-path: var(--slice-4);
     transform: translate(5px, 10px);
   }
+
   70% {
     clip-path: var(--slice-2);
     transform: translate(-10px, 10px);
   }
+
   80% {
     clip-path: var(--slice-5);
     transform: translate(20px, -10px);
   }
+
   90% {
     clip-path: var(--slice-1);
     transform: translate(-10px, 0px);
   }
+
   100% {
     clip-path: var(--slice-1);
     transform: translate(0);
