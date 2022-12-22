@@ -151,7 +151,7 @@ a {
   #button,
   #button:after {
     width: auto;
-    bottom: 70%;
+    top: 50%;
     height: 40px;
     line-height: 40px;
     left: 30%;
