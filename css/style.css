@@ -18,7 +18,7 @@ body {
 	overflow: hidden;
 	color: black;
 	position: fixed;
-  cursor: url('https://imgur.com/9UksORj'), auto;	
+  cursor: url('./custom.cur'), auto;	
 }
 
 #controls {
@@ -88,6 +88,7 @@ a {
   margin-left:auto;
   margin-right:auto;
   visibility: visible;
+  cursor: url('https://imgur.com/9UksORj'), auto;	
 }
 
 #button {
@@ -125,17 +126,12 @@ a {
   --slice-4: inset(40% -6px 43% 0);
   --slice-5: inset(80% -6px 5% 0);
   
-  content: '💕';
-  width: 100px; 
+  content: '  💕  ';
+  width: auto;
   left: 50%;
   text-align: center;
-  display: block;
+  width: auto;
   position: absolute;
-  border-radius: 5px;
-  top: 0;
- 
-  right: 0;
-  bottom: 0;
   background: linear-gradient(45deg, transparent 3%, #F2FCFD 3%, #F2FCFD 5%, #FFE3F4 5%);
   text-shadow: -3px -3px 0px #F8F005, 3px 3px 0px #F2FCFD;
   clip-path: var(--slice-0);
