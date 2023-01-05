@@ -39,6 +39,11 @@ body {
     background:url('https://raw.githubusercontent.com/GanyuHail/oestrosite/main/src/header-bg-long.jpg')
 }
 
+#twitter {
+    width: 30px;
+    height: 30px;
+}
+
 .logo {
     font-family: 'EXE' ;
     display: flex;
@@ -47,3 +52,8 @@ body {
     flex-grow: 10;
     font-size: 35px;
 }
+
+.menu{
+    font-family: 'Righteous';
+}
+
