@@ -19,41 +19,84 @@ body {
 
 .header {
     display: flex;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     align-content: center;
-    justify-content: flex-end;
-    flex-grow: 2;
+    /* justify-content: flex-end; */
+    /* flex-grow: 2; */
     color: black;
     background-color: #1F2937;
     padding-top: 10px;
-    
     padding-left: 200px;
     padding-right: 200px;
-    font-family: sans-serif;
     border-bottom: #1F2937;
 }
 
-#headerbg{
+#headerbg {
     width: auto;
     height: 10%;
-    background:url('https://raw.githubusercontent.com/GanyuHail/oestrosite/main/src/header-bg-long.jpg')
+    background: url('https://raw.githubusercontent.com/GanyuHail/oestrosite/main/src/header-bg-long.jpg')
 }
 
-#twitter {
+.social {
+    font-size: 10px;
+    border: none;
+    margin: 2%;
+    top: 50%;
+    display: flex;
+    align-items:flex-start;
+    justify-content: flex-start;
+}
+
+.twitter {
     width: 30px;
     height: 30px;
+    background-image: url("https://raw.githubusercontent.com/GanyuHail/oestrosite/main/src/icon/twitter.svg");
+    background-size: 30px auto;
+    border: 0;
+    margin-right: 10px;
+}
+
+.insta {
+    width: 30px;
+    height: 30px;
+    background-image: url("https://raw.githubusercontent.com/GanyuHail/oestrosite/main/src/icon/instagramicon.png");
+    background-size: 30px auto;
+    border: 0;
+    margin-right: 10px;
+   
+}
+
+.mail {
+    width: 30px;
+    height: 30px;
+    background-image: url("https://raw.githubusercontent.com/GanyuHail/oestrosite/main/src/icon/mail.png");
+    background-size: 30px 30px;
+    border: 0;
+}
+
+.twitter:hover {
+    opacity: 0.5;
+}
+
+.insta:hover {
+    opacity: 0.5;
+}
+
+.mail:hover {
+    opacity: 0.5;
 }
 
 .logo {
-    font-family: 'EXE' ;
+    font-family: 'EXE';
     display: flex;
     align-items: center;
     justify-content: center;
     flex-grow: 10;
-    font-size: 35px;
+    font-size: 40px;
 }
 
-.menu{
+.menu {
     font-family: 'Righteous';
+    align-items:flex-end;
+    justify-content: flex-end;
 }
-
