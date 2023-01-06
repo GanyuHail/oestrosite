@@ -11,12 +11,16 @@ body {
     height: 100%;
     background-color: #FEB8E3;
     margin: 0px;
-    overflow: hidden;
+    /* overflow: hidden; */
     color: black;
     position: fixed;
     cursor: url('./custom.cur'), auto;
+    background: url('https://raw.githubusercontent.com/GanyuHail/oestrosite/main/src/articles-bg-long.jpg');
 }
 
+a:link:hover {
+    cursor: url('./hover.cur'), auto;
+}
 .header {
     /* display: flex;
     flex-direction: row;
@@ -97,7 +101,8 @@ body {
     position: absolute;
     left: 50%; 
     -webkit-transform: translateX(-50%);
-    transform: translateX(-50%)
+    transform: translateX(-50%);
+    text-shadow: 2px 2px pink;
 }
 
 .logo :hover {
@@ -127,6 +132,7 @@ hr {
     padding-top: 20%;
     width: 100%;
     margin-top: 10px;
+    background: url('https://raw.githubusercontent.com/GanyuHail/oestrosite/main/src/header-bg-long.jpg')
 }
 
 #hr1{
@@ -156,4 +162,21 @@ hr {
 
 h1{ 
     font-family: 'Righteous';
+    font-size: 40px;
+    text-align: right;
+    width: 50%;
+}
+
+h2{ 
+    font-family: 'Righteous';
+    font-size: 20px;
+    width: 50%;
+    text-align: justify;
+    font-weight: 100;
+}
+
+#video {
+    width:100%;
+    display: flex;
+    justify-content: center;
 }
