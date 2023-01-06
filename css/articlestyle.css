@@ -5,22 +5,39 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
 
+body {
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none;  /* Firefox */
+}
+body::-webkit-scrollbar { 
+    display: none;  /* Safari and Chrome */
+}
+
 html,
 body {
     width: 100%;
     height: 100%;
     background-color: #FEB8E3;
     margin: 0px;
-    /* overflow: hidden; */
     color: black;
-    position: fixed;
+    /* position: fixed; */
     cursor: url('./custom.cur'), auto;
     background: url('https://raw.githubusercontent.com/GanyuHail/oestrosite/main/src/articles-bg-long.jpg');
 }
 
 a:link:hover {
     cursor: url('./hover.cur'), auto;
+    opacity: 0.7;
 }
+
+a:link {
+    color: black;
+}
+
+a:visited {
+    color: black;
+  }
+
 .header {
     /* display: flex;
     flex-direction: row;
@@ -163,20 +180,34 @@ hr {
 h1{ 
     font-family: 'Righteous';
     font-size: 40px;
-    text-align: right;
-    width: 50%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
 }
 
 h2{ 
     font-family: 'Righteous';
     font-size: 20px;
-    width: 50%;
-    text-align: justify;
+    text-align: center;
     font-weight: 100;
+
+    width: 1000px;
 }
 
 #video {
-    width:100%;
+    width: 100%;
+    height: 400px;
     display: flex;
     justify-content: center;
+    background-image: linear-gradient(to right,#EBE6FD, #EFE7FD black, black, #EBE6FD, #EFE7FD);
 }
+
+#vidcontainer {
+    height: 500px;
+}
+
+/* #video :hover {
+    cursor: url('./hover.cur'), auto;
+} */

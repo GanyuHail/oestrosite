@@ -293,7 +293,7 @@ function render() {
 	var yrot = _mouseY / _stageHeight * Math.PI * 2 + Math.PI;
 
 	_lineHolder.rotation.x += (-yrot - _lineHolder.rotation.x) * 0.3;
-	_lineHolder.rotation.y += (xrot - _lineHolder.rotation.y) * 0.3;
+	_lineHolder.rotation.y += (-xrot - _lineHolder.rotation.y) * 0.3;
 
 	_renderer.render(_scene, _camera);
 }
