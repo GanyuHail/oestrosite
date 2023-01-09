@@ -64,6 +64,7 @@ a:visited {
     /* align-items:flex-start;
     justify-content: flex-start; */
     position: absolute;
+    z-index: 3;
 }
 
 .twitter {
@@ -73,6 +74,7 @@ a:visited {
     background-size: 20px auto;
     border: 0;
     margin-right: 10px;
+    z-index: 3;
 }
 
 .insta {
@@ -82,7 +84,7 @@ a:visited {
     background-size: 20px auto;
     border: 0;
     margin-right: 10px;
-
+    z-index: 3;
 }
 
 .mail {
@@ -91,21 +93,25 @@ a:visited {
     background-image: url("https://raw.githubusercontent.com/GanyuHail/oestrosite/main/src/icon/mail.png");
     background-size: 20px 20px;
     border: 0;
+    z-index: 3;
 }
 
 .twitter:hover {
     opacity: 0.5;
     cursor: url('./hover.cur'), auto;
+    z-index: 3;
 }
 
 .insta:hover {
     opacity: 0.5;
     cursor: url('./hover.cur'), auto;
+    z-index: 3;
 }
 
 .mail:hover {
     opacity: 0.5;
     cursor: url('./hover.cur'), auto;
+    z-index: 3;
 }
 
 .logo {
@@ -121,6 +127,7 @@ a:visited {
     -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
     text-shadow: 2px 2px pink;
+    z-index: 100;
 }
 
 .logo :hover {
@@ -161,6 +168,10 @@ a:visited {
     margin: 1em 0;
     padding: 0;
     width: 100%;
+    position: absolute;
+    white-space: nowrap;
+    z-index: 1;
+
 }
 
 #hr2{
@@ -170,6 +181,7 @@ a:visited {
     margin: 1em 0;
     padding: 0;
     width: 100%;
+    z-index: 1;
 }
 
 #hr3{
@@ -178,6 +190,7 @@ a:visited {
     border-top: 9px solid white;
     margin: 1em 0;
     padding: 0;
+    z-index: 1;
 }
 
 h1{ 
@@ -227,3 +240,18 @@ h2{
 /* #video :hover {
     cursor: url('./hover.cur'), auto;
 } */
+
+#gaffart {
+    text-align: center;
+    display: inline-block;                                      
+    white-space: nowrap;
+}
+
+#gaffartpic {
+    width: 50%;
+    
+}
+
+p {
+    font-family: 'jost';
+}
