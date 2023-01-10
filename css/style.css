@@ -91,13 +91,8 @@ a {
 }
 
 #button {
-  /* bottom: 30%;
-	text-align: center;
-	z-index: 999; */
   left: 50%;
-  /* border-radius: 5px; */
-  /* display: inline-block; */
-  /* text-transform: lowercase; */
+  border-radius: 5px;
   width: auto;
   height: 50px;
   line-height: 50px;
@@ -110,11 +105,10 @@ a {
   box-shadow: 6px 0px 0px #EFE7FD;
   outline: transparent;
   visibility: visible;
-  /* position: relative; */
   user-select: none;
-  /* -webkit-user-select: none; */
   touch-action: manipulation;
   cursor: url('./hover.cur'), auto;
+  transform: skew(-15deg);
 }
 
 #button:after {

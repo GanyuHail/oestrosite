@@ -241,17 +241,52 @@ h2{
     cursor: url('./hover.cur'), auto;
 } */
 
-#gaffart {
-    text-align: center;
-    display: inline-block;                                      
+#article20gaff {
+    text-align: left;
+    display: flex;      
+    flex-direction: column;     
+    align-items: left;           
+    justify-content: flex-start;              
     white-space: nowrap;
+    background-image: url("/src/oestrovenus.png");
+    width: 50%;
+    margin: 0;
+    height: 800px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
 }
 
-#gaffartpic {
-    width: 50%;
-    
+h1.article {
+    text-align: left;
+    display: flex;      
+    flex-direction: column;     
+    align-items: left;           
+    justify-content: flex-start;              
+    white-space: initial;
 }
 
 p {
     font-family: 'jost';
+    text-align: left;
+    display: flex;      
+    flex-direction: column;     
+    align-items: center;           
+    justify-content: flex-start;   
+}
+
+#article19tldr {
+    text-align: left;
+    display: flex;      
+    flex-direction: column;     
+    align-items: left;           
+    justify-content: flex-start;              
+    white-space: nowrap;
+    background-image: url("/src/tdor.jpg");
+    width: 50%;
+    margin: 0;
+    height: 800px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
 }
