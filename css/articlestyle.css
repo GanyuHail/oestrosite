@@ -4,14 +4,18 @@
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Jost&family=Lancelot&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Jost&family=Lancelot&display=swap');
 
 body {
-    -ms-overflow-style: none;  /* Internet Explorer 10+ */
-    scrollbar-width: none;  /* Firefox */
+    -ms-overflow-style: none;
+    /* Internet Explorer 10+ */
+    scrollbar-width: none;
+    /* Firefox */
 }
-body::-webkit-scrollbar { 
-    display: none;  /* Safari and Chrome */
+
+body::-webkit-scrollbar {
+    display: none;
+    /* Safari and Chrome */
 }
 
 html,
@@ -37,7 +41,7 @@ a:link {
 
 a:visited {
     color: black;
-  }
+}
 
 .header {
     /* display: flex;
@@ -48,6 +52,7 @@ a:visited {
     padding-top: 10px;
     border-bottom: #1F2937;
     height: auto;
+    /* position: fixed; */
 }
 
 #headerbg {
@@ -65,6 +70,7 @@ a:visited {
     justify-content: flex-start; */
     position: absolute;
     z-index: 3;
+    right: 0px;
 }
 
 .twitter {
@@ -120,14 +126,15 @@ a:visited {
     display: inline-block;
     text-align: center;
     flex-grow: 10;
-    font-size: 40px;
+    font-size: 50px;
     align-items: center;
     position: absolute;
-    left: 50%; 
+    left: 50%;
     -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
     text-shadow: 2px 2px pink;
     z-index: 100;
+    position: fixed;
 }
 
 .logo :hover {
@@ -140,12 +147,13 @@ a:visited {
     display: flex;
     flex-direction: row;
     flex-flow: row wrap;
-    align-content: flex-end;        
+    align-content: flex-end;
     font-family: 'Righteous';
     float: right;
     width: 30%;
     justify-content: space-between;
     font-size: 15px;
+    position: fixed;
 }
 
 .menu :hover {
@@ -160,7 +168,7 @@ a:visited {
     background: url('https://raw.githubusercontent.com/GanyuHail/oestrosite/main/src/header-bg-long.jpg')
 } */
 
-#hr1{
+#hr1 {
     display: block;
     height: 1px;
     border: 0;
@@ -171,10 +179,9 @@ a:visited {
     position: absolute;
     white-space: nowrap;
     z-index: 1;
-
 }
 
-#hr2{
+#hr2 {
     height: 1px;
     border: 0;
     border-top: 3px solid white;
@@ -184,7 +191,7 @@ a:visited {
     z-index: 1;
 }
 
-#hr3{
+#hr3 {
     height: 1px;
     border: 0;
     border-top: 9px solid white;
@@ -193,7 +200,11 @@ a:visited {
     z-index: 1;
 }
 
-h1{ 
+#intro {
+    padding-top: 2%;
+}
+
+h1 {
     font-family: 'Righteous';
     font-size: 40px;
     text-align: center;
@@ -203,15 +214,16 @@ h1{
     font-style: italic;
 }
 
-h2{ 
-    font-family: 'Jost',  sans-serif;;
+h2 {
+    font-family: 'Jost', sans-serif;
+    ;
     font-size: 20px;
     text-align: center;
     font-weight: 100;
     /* width: 1000px; */
     display: block;
-    margin:0 auto;
-   
+    margin: 0 auto;
+
 }
 
 #video {
@@ -219,20 +231,13 @@ h2{
     height: 400px;
     display: flex;
     justify-content: center;
-    background-image: linear-gradient(to right,#EBE6FD, #EFE7FD black, black, #EBE6FD, #EFE7FD);
+    background-image: linear-gradient(to right,white, #EBE6FD , black, black, white, #EBE6FD);
 }
 
-#vidcontainer {
-    /* height: 500px; */
-    display: flex;
-    justify-content: center;
-    background-image: linear-gradient(to right,#EBE6FD, #EFE7FD black, black, #EBE6FD, #EFE7FD);
-} 
-
 #hr4 {
-    height: 1px;
+    /* height: 1px; */
     border: 0;
-    border-top: 9px solid white;
+    border-top: 5px solid white;
     margin: 1em 0;
     padding: 10px;
 }
@@ -241,52 +246,106 @@ h2{
     cursor: url('./hover.cur'), auto;
 } */
 
-#article20gaff {
-    text-align: left;
-    display: flex;      
-    flex-direction: column;     
-    align-items: left;           
-    justify-content: flex-start;              
-    white-space: nowrap;
-    background-image: url("/src/oestrovenus.png");
-    width: 50%;
-    margin: 0;
-    height: 800px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    color: white;
+.articlesheader {
+    font-family: 'EXE' !important;
+    font-size: 40px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* margin-bottom: 20px; */
 }
 
 h1.article {
     text-align: left;
-    display: flex;      
-    flex-direction: column;     
-    align-items: left;           
-    justify-content: flex-start;              
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: flex-start;
     white-space: initial;
+   
 }
 
 p {
     font-family: 'jost';
     text-align: left;
-    display: flex;      
-    flex-direction: column;     
-    align-items: center;           
-    justify-content: flex-start;   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.hide {
+    display: hidden;
+}
+
+#article20gaff {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: flex-start;
+    white-space: nowrap;
+    background-image: url("/src/oestrovenus.png");
+    width: 80%;
+    margin-left: 10%;
+    height: 220px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #EFE7FD;
+    transition: height 0.5s, padding-top 0.5s;
+}
+
+#article20gaff:hover {
+    height: 1000px;
+    padding-top: 100px;
 }
 
 #article19tldr {
     text-align: left;
-    display: flex;      
-    flex-direction: column;     
-    align-items: left;           
-    justify-content: flex-start;              
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
     white-space: nowrap;
     background-image: url("/src/tdor.jpg");
-    width: 50%;
-    margin: 0;
-    height: 800px;
+    width: 80%;
+    margin-left: 10%;
+    height: 220px;
     background-repeat: no-repeat;
     background-size: cover;
-    color: white;
+    color: #EFE7FD;
+    transition: height 0.5s, padding-top 0.5s;
 }
+
+#article19tldr:hover {
+    height: 1000px;
+}
+
+
+#article18galdem {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: flex-start;
+    white-space: nowrap;
+    background-image: url("/src/anewlegacy.png");
+    width: 80%;
+    margin-left: 10%;
+    height: 220px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+    color: #EFE7FD;
+    transition: height 0.5s, padding-top 0.5s;
+}
+
+#article18galdem:hover {
+    height: 1000px;
+    padding-top: 100px;
+}
+/* #articlerow1 {
+    display: inline-block;
+
+} */
