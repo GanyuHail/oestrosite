@@ -149,8 +149,9 @@ a:visited {
     flex-flow: row wrap;
     align-content: flex-end;
     font-family: 'Righteous';
-    float: right;
+    /* float: right; */
     width: 30%;
+    margin-left: 1%;
     justify-content: space-between;
     font-size: 15px;
     position: fixed;
@@ -345,7 +346,84 @@ p {
     height: 1000px;
     padding-top: 100px;
 }
-/* #articlerow1 {
-    display: inline-block;
 
-} */
+#article17wives {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: flex-start;
+    white-space: nowrap;
+    background-image: url("/src/transhug.jpg");
+    width: 80%;
+    margin-left: 10%;
+    height: 220px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+    color: #EFE7FD;
+    transition: height 0.5s, padding-top 0.5s;
+}
+
+#article17wives:hover {
+    height: 1000px;
+    padding-top: 100px;
+}
+
+#article16reflect {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: flex-start;
+    white-space: nowrap;
+    background-image: url("/src/transmeme.jpeg");
+    width: 80%;
+    margin-left: 10%;
+    height: 220px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+    color: #EFE7FD;
+    transition: height 0.5s, padding-top 0.5s;
+}
+
+#article16reflect:hover {
+    height: 1000px;
+    padding-top: 100px;
+}
+
+#article15wild {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: flex-start;
+    white-space: nowrap;
+    background-image: url("/src/wild.jpeg");
+    width: 80%;
+    margin-left: 10%;
+    height: 220px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+    color: #EFE7FD;
+    transition: height 0.5s, padding-top 0.5s;
+}
+
+#article15wild:hover {
+    height: 1000px;
+    padding-top: 100px;
+}
+
+footer {
+    background-color: #c5aac3;
+    color: white;
+    padding-top: 1%;
+    padding-bottom: 2%;
+}
+
+#footerinfo{
+    display: flex;
+    align-content: center;
+}
