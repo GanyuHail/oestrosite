@@ -287,7 +287,7 @@ p {
     align-items: left;
     justify-content: flex-start;
     white-space: nowrap;
-    background-image: url("/src/oestrovenus.png");
+    background-image: url("/oestrosite/src/oestrovenus.png");
     width: 80%;
     margin-left: 10%;
     height: 220px;
@@ -309,7 +309,7 @@ p {
     align-items: center;
     justify-content: flex-start;
     white-space: nowrap;
-    background-image: url("/src/tdor.jpg");
+    background-image: url("/oestrosite/src/tdor.jpg");
     width: 80%;
     margin-left: 10%;
     height: 220px;
@@ -331,7 +331,7 @@ p {
     align-items: left;
     justify-content: flex-start;
     white-space: nowrap;
-    background-image: url("/src/anewlegacy.png");
+    background-image: url("/oestrosite/src/anewlegacy.png");
     width: 80%;
     margin-left: 10%;
     height: 220px;
@@ -354,7 +354,7 @@ p {
     align-items: left;
     justify-content: flex-start;
     white-space: nowrap;
-    background-image: url("/src/transhug.jpg");
+    background-image: url("/oestrosite/src/transhug.jpg");
     width: 80%;
     margin-left: 10%;
     height: 220px;
@@ -377,7 +377,7 @@ p {
     align-items: left;
     justify-content: flex-start;
     white-space: nowrap;
-    background-image: url("/src/transmeme.jpeg");
+    background-image: url("/oestrosite/src/transmeme.jpeg");
     width: 80%;
     margin-left: 10%;
     height: 220px;
@@ -400,7 +400,7 @@ p {
     align-items: left;
     justify-content: flex-start;
     white-space: nowrap;
-    background-image: url("/src/wild.jpeg");
+    background-image: url("/oestrosite/src/wild.jpeg");
     width: 80%;
     margin-left: 10%;
     height: 220px;
