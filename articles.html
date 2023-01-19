@@ -20,13 +20,13 @@
                 onClick="location.href='https://www.instagram.com/oestrogeneration/'"></button>
             <button id="mail" class="mail" onClick="location.href='mailto:info@oestrogeneration.org'"></button>
         </div>
-        <div class="logo" onclick="location.href='/oestrosite/index.html'">OESTROGENERATION</div>
+        <div class="logo" onclick="location.href='/index.html'">OESTROGENERATION</div>
         <div class="menu">
-            <div class="articles" onclick="location.href='/oestrosite/articles.html'">articles</div>
-            <div class="about us" onclick="location.href='/oestrosite/aboutus.html'">about us</div>
-            <div class="support us" onclick="location.href='/oestrosite/supportus.html'">support us</div>
-            <div class="write for us" onclick="location.href='/oestrosite/writeforus.html'">write for us</div>
-            <div class="meet the dolls" onclick="location.href='/oestrosite/meetthedolls.html'">meet the dolls</div>
+            <div class="articles" onclick="location.href='/articles.html'">articles</div>
+            <div class="about us" onclick="location.href='/aboutus.html'">about us</div>
+            <div class="support us" onclick="location.href='/supportus.html'">support us</div>
+            <div class="write for us" onclick="location.href='/writeforus.html'">write for us</div>
+            <div class="meet the dolls" onclick="location.href='/meetthedolls.html'">meet the dolls</div>
             <!-- <div class="menu" onclick="location.href='/menu.html'">menu</div> -->
         </div>
         <hr id="hr2">
@@ -63,7 +63,7 @@
             <div>💖</div>
         </span>
         <hr id="hr4">
-        <span id="articlerow1">
+        <span id="articlecolumn">
             <span id="article20gaff">
                 <div>
                     <h1 class="article">where to buy tucking underwear in the uk</h1>
@@ -150,17 +150,18 @@
     <span>
         <h1>subscribe</h1>
         <p>sign up with your email address to receive news and updates.</p>
-        <label for="email"><b>Email</b></label>
-        <input type="text" placeholder="email address" name="email" id="email" required>
+        <div id="signup">
+            <input type="text" placeholder="email address" name="email" id="email" required>
+            <button type="submit" class="registerbtn">sign up</button>
+        </div>
         <p>we respect your privacy.</p>
-        <button type="submit" class="registerbtn">sign up</button>
     </span>
     <span id="footerinfo">
-        <div>© oestrogeneration 2022
+        <div id ="footercomp">© oestrogeneration 2023
             <br>
             company number: 14025042
         </div>
-        <div>
+        <div id="footeremail">
             info@oestrogeneration.org
         </div>
         <div class="social">
