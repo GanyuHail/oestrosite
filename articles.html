@@ -14,6 +14,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Jost&family=Lancelot&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/articlestyle.css" )>
     <header class="header" id="headerbg">
+        <script>function menuOnClick() {
+                document.getElementById("menu-bar").classList.toggle("change");
+                document.getElementById("nav").classList.toggle("change");
+                document.getElementById("menu-bg").classList.toggle("change-bg");
+            }</script>
         <div class="social">
             <button id="twitter" class="twitter" onClick="location.href='https://twitter.com/oestrogenration'"></button>
             <button id="insta" class="insta"
@@ -22,12 +27,24 @@
         </div>
         <div class="logo" onclick="location.href='/index.html'">OESTROGENERATION</div>
         <div class="menu">
-            <div class="articles" onclick="location.href='/articles.html'">articles</div>
-            <div class="about us" onclick="location.href='/aboutus.html'">about us</div>
-            <div class="support us" onclick="location.href='/supportus.html'">support us</div>
-            <div class="write for us" onclick="location.href='/writeforus.html'">write for us</div>
-            <div class="meet the dolls" onclick="location.href='/meetthedolls.html'">meet the dolls</div>
-            <!-- <div class="menu" onclick="location.href='/menu.html'">menu</div> -->
+            <div id="menu">
+                <div id="menu-bar" onclick="menuOnClick()">
+                    <div id="bar1" class="bar"></div>
+                    <div id="bar2" class="bar"></div>
+                    <div id="bar3" class="bar"></div>
+                </div>
+                <nav class="nav" id="nav">
+                    <ul>
+                        <li><a href="/articles.html">articles</a></li>
+                        <li><a href="/aboutus.html">about us</a></li>
+                        <li><a href="/supportus.html">support us</a></li>
+                        <li><a href="/writeforus.html">write for us</a></li>
+                        <li><a href="/meetthedolls.html">meet the dolls</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="menu-bg" id="menu-bg"></div>
         </div>
         <hr id="hr2">
         <hr id="hr3">
@@ -151,13 +168,13 @@
         <h1>subscribe</h1>
         <p>sign up with your email address to receive news and updates.</p>
         <div id="signup">
-            <input type="text" placeholder="email address" name="email" id="email" required>
+            <input type="text" class="emtextbox" placeholder="email address" name="email" id="email" required>
             <button type="submit" class="registerbtn">sign up</button>
         </div>
         <p>we respect your privacy.</p>
     </span>
     <span id="footerinfo">
-        <div id ="footercomp">© oestrogeneration 2023
+        <div id="footercomp">© oestrogeneration 2023
             <br>
             company number: 14025042
         </div>
