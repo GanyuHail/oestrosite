@@ -36,11 +36,13 @@ a:link:hover {
 }
 
 a:link {
-    color: black;
+    color: inherit;
+    text-decoration: none;
 }
 
 a:visited {
-    color: black;
+    color: inherit;
+    text-decoration: none;
 }
 
 .header {
@@ -259,12 +261,58 @@ a:visited {
     transform: translate(-60%, -30%);
 }
 
-/* hr {
-    padding-top: 20%;
-    width: 100%;
-    margin-top: 10px;
-    background: url('https://raw.githubusercontent.com/GanyuHail/oestrosite/main/src/header-bg-long.jpg')
-} */
+.dropbtn {
+    border: none;
+    background-color: transparent;
+    color: pink;
+    font-family: 'Righteous';
+    font-weight: 500;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    transition: 0.5s ease;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    z-index: 2;
+    width: 20em;
+    height: 20em;
+    margin: 30px 0 10px 40px;
+    background: radial-gradient(ellipse at bottom, transparent, #FEB8E3),
+        radial-gradient(ellipse at top, #FEB8E3, white);
+    border-radius: 50%;
+    transform: translate(-60%, -30%);
+    
+  }
+  
+  .dropdown-content a {
+    padding: 10px;
+    margin: 15px 0 10px 80px;
+    text-decoration: none;
+    /*  */
+    display: block;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #ddd;
+    width: 6em;
+    border-radius: 25%;
+    color: hotpink;
+}
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+}
+  
+  .dropdown:hover .dropbtn {
+    background-color: hotpink;
+    visibility: none;
+    transition: 0.5s ease;
+}
 
 #hr1 {
     display: block;
@@ -304,7 +352,7 @@ a:visited {
 
 h1 {
     font-family: 'Righteous';
-    font-size: 2em;
+    font-size: 1.8em;
     text-align: center;
     display: flex;
     align-items: center;
@@ -372,21 +420,24 @@ p {
     justify-content: flex-start;
 }
 
-#articlecolumn {
-    width: 70%;
-}
+/* #articlecolumn {
+    width: 60%;
+} */
 
 #article20gaff {
-    text-align: left;
+    font-family: 'Righteous';
+    text-align: center;
     display: flex;
     flex-direction: column;
-    align-items: left;
+    flex-wrap: nowrap;
+    align-items: stretch;
     justify-content: flex-start;
     white-space: nowrap;
     background-image: url("/src/oestrovenus.png");
-    width: 80%;
-    margin-left: 10%;
-    height: 220px;
+    width: 70%;
+    margin-left: 15%;
+    margin-top: auto;
+    height: 12em;
     background-repeat: no-repeat;
     background-size: cover;
     color: #EFE7FD;
@@ -394,15 +445,15 @@ p {
 }
 
 #article20gaff:hover {
-    padding-top: 5%;
-    padding-bottom: 10%;
+    padding-top: 2.5%;
+    padding-bottom: 5%;
 }
 
 #hide1 {
     visibility:hidden;
     opacity:0;
     transition:visibility 0.3s linear,opacity 0.3s linear;
-    color: #EFE7FD;
+    color: hotpink;
     font-size: 2em;
     text-align: center;
     margin-top: 1.5em;
@@ -413,115 +464,165 @@ p {
     opacity:1;
 } 
 
-
 #article19tldr {
-    text-align: left;
+    font-family: 'Righteous';
+    text-align: center;
     display: flex;
+    list-style: none;
+    flex-flow: row wrap;
     flex-direction: column;
-    align-items: center;
+    flex-wrap: nowrap;
+    align-items: stretch;
     justify-content: flex-start;
     white-space: nowrap;
     background-image: url("/src/tdor.jpg");
-    width: 80%;
-    margin-left: 10%;
-    height: 220px;
+    width: 70%;
+    margin-left: 15%;
+    margin-top: auto;
+    height: 12em;
     background-repeat: no-repeat;
     background-size: cover;
     color: #EFE7FD;
-    transition: height 0.5s, padding-top 0.5s;
+    transition: height 0.5s, padding-top 0.5s, padding-bottom 0.5s;
 }
 
 #article19tldr:hover {
-    padding-top: 100px;
+    padding-top: 2.5%;
+    padding-bottom: 5%;
 }
 
+#article19tldr:hover #hide1 {
+    visibility:visible;
+    opacity:1;
+} 
+
 #article18galdem {
-    text-align: left;
+    font-family: 'Righteous';
+    text-align: center;
     display: flex;
+    list-style: none;
+    flex-flow: row wrap;
     flex-direction: column;
-    align-items: left;
+    flex-wrap: nowrap;
+    align-items: stretch;
     justify-content: flex-start;
     white-space: nowrap;
     background-image: url("/src/anewlegacy.png");
-    width: 80%;
-    margin-left: 10%;
-    height: 220px;
+    width: 70%;
+    margin-left: 15%;
+    margin-top: auto;
+    height: 12em;
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center top;
-    color: #EFE7FD;
-    transition: height 0.5s, padding-top 0.5s;
+    color: #df18b2;
+    transition: height 0.5s, padding-top 0.5s, padding-bottom 0.5s;
 }
 
 #article18galdem:hover {
-    padding-top: 100px;
+    padding-top: 2.5%;
+    padding-bottom: 5%;
 }
 
+#article18galdem:hover #hide1 {
+    visibility:visible;
+    opacity:1;
+} 
+
 #article17wives {
-    text-align: left;
+    font-family: 'Righteous';
+    text-align: center;
     display: flex;
+    list-style: none;
+    flex-flow: row wrap;
     flex-direction: column;
-    align-items: left;
+    flex-wrap: nowrap;
+    align-items: stretch;
     justify-content: flex-start;
     white-space: nowrap;
     background-image: url("/src/transhug.jpg");
-    width: 80%;
-    margin-left: 10%;
-    height: 220px;
+    width: 70%;
+    margin-left: 15%;
+    margin-top: auto;
+    height: 12em;
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center top;
-    color: #EFE7FD;
-    transition: height 0.5s, padding-top 0.5s;
+    color: pink;
+    transition: height 0.5s, padding-top 0.5s, padding-bottom 0.5s;
 }
 
 #article17wives:hover {
-    padding-top: 100px;
+    padding-top: 2.5%;
+    padding-bottom: 5%;
 }
 
+#article17wives:hover #hide1 {
+    visibility:visible;
+    opacity:1;
+} 
+
 #article16reflect {
-    text-align: left;
+    font-family: 'Righteous';
+    text-align: center;
     display: flex;
+    list-style: none;
+    flex-flow: row wrap;
     flex-direction: column;
-    align-items: left;
+    flex-wrap: nowrap;
+    align-items: stretch;
     justify-content: flex-start;
     white-space: nowrap;
     background-image: url("/src/transmeme.jpeg");
-    width: 80%;
-    margin-left: 10%;
-    height: 220px;
+    width: 70%;
+    margin-left: 15%;
+    margin-top: auto;
+    height: 12em;
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center top;
     color: #EFE7FD;
-    transition: height 0.5s, padding-top 0.5s;
+    transition: height 0.5s, padding-top 0.5s, padding-bottom 0.5s;
 }
 
 #article16reflect:hover {
-    padding-top: 100px;
+    padding-top: 2.5%;
+    padding-bottom: 5%;
 }
 
+#article16reflect:hover #hide1 {
+    visibility:visible;
+    opacity:1;
+} 
+
 #article15wild {
-    text-align: left;
+    font-family: 'Righteous';
+    text-align: center;
     display: flex;
+    list-style: none;
+    flex-flow: row wrap;
     flex-direction: column;
-    align-items: left;
+    flex-wrap: nowrap;
+    align-items: stretch;
     justify-content: flex-start;
     white-space: nowrap;
     background-image: url("/src/wild.jpeg");
-    width: 80%;
-    margin-left: 10%;
-    height: 220px;
+    width: 70%;
+    margin-left: 15%;
+    margin-top: auto;
+    height: 12em;
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center top;
-    color: #EFE7FD;
-    transition: height 0.5s, padding-top 0.5s;
+    color: hotpink;
+    transition: height 0.5s, padding-top 0.5s, padding-bottom 0.5s;
 }
 
 #article15wild:hover {
-    padding-top: 100px;
+    padding-top: 2.5%;
+    padding-bottom: 5%;
 }
+
+#article15wild:hover #hide1 {
+    visibility:visible;
+    opacity:1;
+} 
 
 footer {
     background-color: #c5aac3;

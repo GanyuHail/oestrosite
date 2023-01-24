@@ -14,11 +14,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Jost&family=Lancelot&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/articlestyle.css" )>
     <header class="header" id="headerbg">
-        <script>function menuOnClick() {
+        <script>
+            function menuOnClick() {
                 document.getElementById("menu-bar").classList.toggle("change");
                 document.getElementById("nav").classList.toggle("change");
                 document.getElementById("menu-bg").classList.toggle("change-bg");
-            }</script>
+            };
+        </script>
         <div class="social">
             <button id="twitter" class="twitter" onClick="location.href='https://twitter.com/oestrogenration'"></button>
             <button id="insta" class="insta"
@@ -35,7 +37,16 @@
                 </div>
                 <nav class="nav" id="nav">
                     <ul>
-                        <li><a href="/articles.html">articles</a></li>
+                        <li id="submenu"><a href="/articles.html">articles
+                                <div class="dropdown">
+                                    <button class="dropbtn">></button>
+                                    <div class="dropdown-content">
+                                        <a href="#">politics</a>
+                                        <a href="#">first person</a>
+                                        <a href="#">art & culture</a>
+                                    </div>
+                                </div>
+                            </a></li>
                         <li><a href="/aboutus.html">about us</a></li>
                         <li><a href="/supportus.html">support us</a></li>
                         <li><a href="/writeforus.html">write for us</a></li>
@@ -93,7 +104,7 @@
                         meet the women creating gaffs for transfeminine people in the uk
                     </h2>
                 </div>
-                <div id="hide1"><a href="./article20.html">read 📖</a></div>
+                <div id="hide1"><a href="./articles/article20.html">read 📖</a></div>
             </span>
             <span id="article19tldr">
                 <div>
@@ -107,6 +118,7 @@
                         a trans day of remembrance service for your phone
                     </h2>
                 </div>
+                <div id="hide1"><a href="./articles/article19.html">read 📖</a></div>
             </span>
             <span id="article18galdem">
                 <div>
@@ -121,6 +133,7 @@
                         power of trans storytelling.
                     </h2>
                 </div>
+                <div id="hide1"><a href="./articles/article18.html">read 📖</a></div>
             </span>
             <span id="article17wives">
                 <div>
@@ -134,6 +147,7 @@
                     <h2 class="article">
                     </h2>
                 </div>
+                <div id="hide1"><a href="./articles/article17.html">read 📖</a></div>
             </span>
             <span id="article16reflect">
                 <div>
@@ -146,6 +160,7 @@
                     <h2 class="article">
                     </h2>
                 </div>
+                <div id="hide1"><a href="./articles/article16.html">read 📖</a></div>
             </span>
             <span id="article15wild">
                 <div>
@@ -158,6 +173,7 @@
                     <h2 class="article">
                     </h2>
                 </div>
+                <div id="hide1"><a href="./articles/article15.html">read 📖</a></div>
             </span>
         </span>
     </div>
