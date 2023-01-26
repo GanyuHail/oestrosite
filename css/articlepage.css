@@ -672,7 +672,7 @@ footer {
     font-size: 0.8em;
     font-family: 'jost';
     text-align: left;
-    color: black;
+    color: white;
     /* width: 20em; */
 }
 
@@ -708,14 +708,15 @@ footer {
     /* The image used */
     background-image: url("../src/oestrovenus.png");
     margin-top: 2em;
-    height: 1200%; 
+    height: 100%; 
   
     /* Center and scale the image nicely */
-    background-position: center;
+    background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
   }
 
   .imagetext {
     position: absolute;
+    align-items: left;
   }
