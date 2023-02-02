@@ -348,7 +348,6 @@ h1 {
     font-size: 1.8em;
     text-align: center;
     display: flex;
-    align-items: center;
     justify-content: center;
     font-style: italic;
 }
@@ -393,7 +392,7 @@ h2 {
 }
 
 h1.article {
-    text-align: left;
+    text-align: center;
     display: flex;
     flex-direction: column;
     align-items: left;
@@ -427,7 +426,7 @@ p {
     width: 70%;
     margin-left: 15%;
     margin-top: auto;
-    height: 12em;
+    height: fit-content;
     background-repeat: no-repeat;
     background-size: cover;
     color: #EFE7FD;
@@ -459,8 +458,6 @@ p {
     font-family: 'Righteous';
     text-align: center;
     display: flex;
-    list-style: none;
-    flex-flow: row wrap;
     flex-direction: column;
     flex-wrap: nowrap;
     align-items: stretch;
@@ -470,11 +467,12 @@ p {
     width: 70%;
     margin-left: 15%;
     margin-top: auto;
-    height: 12em;
+    height: fit-content;
     background-repeat: no-repeat;
     background-size: cover;
     color: #EFE7FD;
     transition: height 0.5s, padding-top 0.5s, padding-bottom 0.5s;
+    word-wrap: break-word;
 }
 
 #article19tldr:hover {
@@ -491,8 +489,6 @@ p {
     font-family: 'Righteous';
     text-align: center;
     display: flex;
-    list-style: none;
-    flex-flow: row wrap;
     flex-direction: column;
     flex-wrap: nowrap;
     align-items: stretch;
@@ -502,10 +498,10 @@ p {
     width: 70%;
     margin-left: 15%;
     margin-top: auto;
-    height: 12em;
+    height: fit-content;
     background-repeat: no-repeat;
     background-size: cover;
-    color: #df18b2;
+    color: #EFE7FD;
     transition: height 0.5s, padding-top 0.5s, padding-bottom 0.5s;
     word-wrap: break-word;
 }
@@ -540,7 +536,7 @@ p {
     width: 70%;
     margin-left: 15%;
     margin-top: auto;
-    height: 12em;
+    height: fit-content;
     background-repeat: no-repeat;
     background-size: cover;
     color: pink;
@@ -572,7 +568,7 @@ p {
     width: 70%;
     margin-left: 15%;
     margin-top: auto;
-    height: 12em;
+    height: fit-content;
     background-repeat: no-repeat;
     background-size: cover;
     color: #EFE7FD;
@@ -604,7 +600,7 @@ p {
     width: 70%;
     margin-left: 15%;
     margin-top: auto;
-    height: 12em;
+    height: fit-content;
     background-repeat: no-repeat;
     background-size: cover;
     color: hotpink;
@@ -725,8 +721,8 @@ footer {
     }
 
     .menu-bg {
-        z-index: 2;
-        width: 100%;
+        z-index: 3;
+        /* width: 100%; */
         height: 80%;
         margin: 30px 0 20px 20px;
         background: radial-gradient(ellipse at bottom, #C6BBED, #BA4B8F),
@@ -734,9 +730,31 @@ footer {
         border-radius: 50%;
         transition: 0.3s ease;
     }
-    
 
     #topsocial {
         display: none;
+    }
+
+    h1 { 
+        text-align: center;
+    }
+
+    #articlecolumn {
+        width: 100%;
+    }
+
+    #article20gaff  {
+        width: 100%;
+        margin-left: 0px;
+    }
+
+    #article19tdor  {
+        width: 100%;
+        margin-left: 0px;
+    }
+
+    #article18galdem {
+        width: 100%;
+        margin-left: 0px;
     }
 }
