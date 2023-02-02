@@ -737,6 +737,11 @@ footer {
 
     h1 { 
         text-align: center;
+        margin: 1.5em;
+    }
+
+    h2 {
+        word-wrap: break-word;
     }
 
     #articlecolumn {
@@ -748,12 +753,28 @@ footer {
         margin-left: 0px;
     }
 
-    #article19tdor  {
+    #article19tldr  {
         width: 100%;
         margin-left: 0px;
     }
 
     #article18galdem {
+        width: 100%;
+        margin-left: 0px;
+        background-position: center;
+    }
+
+    #article17wives {
+        width: 100%;
+        margin-left: 0px;
+    }
+
+    #article16reflect {
+        width: 100%;
+        margin-left: 0px;
+    }
+
+    #article15wild {
         width: 100%;
         margin-left: 0px;
     }
