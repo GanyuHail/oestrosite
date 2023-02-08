@@ -22,10 +22,29 @@ body {
     margin: 0px;
     color: black;
     cursor: url('./custom.cur'), auto;
-    background: url('https://raw.githubusercontent.com/GanyuHail/oestrosite/main/src/articles-bg-long.jpg');
+    /* background: url('https://raw.githubusercontent.com/GanyuHail/oestrosite/main/src/articles-bg-long.jpg');
     background-repeat: no-repeat;
-    background-size: auto;
+    background-size: auto; */
+    background: linear-gradient(-45deg, hotpink, white, #EBE6FD, #f3fbfe);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    height: 100vh;
 }
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
 
 a:link:hover {
     cursor: url('./hover.cur'), auto;
@@ -180,10 +199,13 @@ a:visited {
 
 #bar1 {
     transform: translateY(-5px);
+    z-index: 10;
+
 }
 
 #bar3 {
     transform: translateY(5px);
+    z-index: 10;
 }
 
 .nav {
@@ -215,10 +237,11 @@ a:visited {
     top: 0;
     left: 0;
     position: absolute;
+    z-index: 10;
 }
 
 .menu-bg {
-    z-index: 1;
+    z-index: 10;
     width: 0;
     height: 30%;
     margin: 30px 0 20px 20px;
@@ -338,6 +361,51 @@ a:visited {
     padding: 0;
     z-index: 1;
 }
+
+@keyframes hr-animation {
+    from{ transform: translate(0, 0); }
+    to{ transform: translate(50%, 0); }
+  }
+  @-webkit-keyframes hr-animation {
+    from{ -webkit-transform: translate(0, 0); }
+    to{ -webkit-transform: translate(50%, 0); }
+  }
+  .hr-animation {
+    -webkit-animation: hr-animation 5s linear infinite;
+    animation: hr-animation 5s linear infinite;
+  }
+
+  .colored {
+    background-image: linear-gradient(left, white, hotpink, white, #EBE6FD, #f3fbfe);
+    background-image: -moz-linear-gradient(left, white, hotpink, white, #EBE6FD, #f3fbfe );
+    background-image: -o-linear-gradient(left, white, hotpink, white, #EBE6FD, #f3fbfe);
+    background-image: linear-gradient(to right, white, hotpink, white, #EBE6FD, #f3fbfe );
+  }
+  
+  .rainbowcontainer {
+    
+    overflow: hidden;
+    width: 100%;
+  }
+  
+  .wrap {
+    font-size: 0;
+    height: 5px;
+    width: 200%;
+    margin-top: 8px;
+    position: relative;
+  }
+  
+  .wrap hr {
+    border: none;
+    height: 5px;
+    width: 50%;
+    position: absolute;
+  }
+  
+  .wrap hr:last-child {
+    left: -50%;
+  }
 
 #intro {
     padding-top: 2%;
@@ -688,9 +756,24 @@ footer {
 
 @media only screen and (max-width: 600px) {
 
+    #headerbg {
+        height: 2.8em;
+    }
+
+    .header {
+        height: 0.5em;
+    }
+
+    #hr3 {
+        border-top: 3px solid;
+        background: linear-gradient(-45deg, #FEB8E3, hotpink, #EBE6FD, #f3fbfe);
+        background-size: 400% 400%;
+        animation: gradient 15s ease infinite;
+    }
+
     .logo {
         left: 7.3em;
-        margin-top: 0; 
+        margin-top: 0;
         font-size: 1.8em;
     }
 
@@ -711,7 +794,7 @@ footer {
     #bar1 {
         transform: translateY(-4px);
     }
-    
+
     #bar3 {
         transform: translateY(4px);
     }
@@ -719,11 +802,11 @@ footer {
     .change #bar1 {
         transform: translateY(4px) rotateZ(-45deg);
     }
-    
+
     .change #bar2 {
         opacity: 0;
     }
-    
+
     .change #bar3 {
         transform: translateY(-4px) rotateZ(45deg);
     }
@@ -732,7 +815,7 @@ footer {
         display: none;
     }
 
-    h1 { 
+    h1 {
         text-align: center;
         margin: 1em;
     }
@@ -750,13 +833,13 @@ footer {
         word-wrap: break-word;
     }
 
-    #article20gaff  {
+    #article20gaff {
         width: 100%;
         margin-left: 0px;
         white-space: normal;
     }
 
-    #article19tldr  {
+    #article19tldr {
         width: 100%;
         margin-left: 0px;
         white-space: normal;
