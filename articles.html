@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <title>oestrogeneration</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimal-ui">
+    <meta content='width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no' name='viewport'>
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, minimal-ui"> -->
     <link rel="icon" type="favicon" href="/oestrosite/favicon.ico" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -23,6 +24,12 @@
                 document.getElementById("nav").classList.toggle("change");
                 document.getElementById("menu-bg").classList.toggle("change-bg");
             };
+            var clickEvent = (function () { 
+                if ('ontouchstart' in document.documentElement === true)
+                    return 'touchstart';
+                else
+                    return 'click';
+            })();
         </script>
         <div id="topsocial">
             <div class="social">
@@ -142,7 +149,7 @@
                             power of trans storytelling.
                         </h2>
                     </div>
-                    <div id="hide1"><a href="./articles/article18.html">read 📖</a></div>
+                    <div id="hide1" class="contrast"><a href="./articles/article18.html">read 📖</a></div>
                 </span>
             </div>
             <span id="article17wives">

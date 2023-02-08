@@ -354,7 +354,7 @@ h1 {
 
 h2 {
     font-family: 'Jost', sans-serif;
-    font-size: 20px;
+    font-size: 1.25em;
     text-align: center;
     font-weight: 100;
     display: block;
@@ -402,7 +402,7 @@ h1.article {
 
 p {
     font-family: 'jost';
-    text-align: left;
+    text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -421,7 +421,6 @@ p {
     flex-wrap: nowrap;
     align-items: stretch;
     justify-content: flex-start;
-    white-space: nowrap;
     background-image: url("/src/oestrovenus.png");
     width: 70%;
     margin-left: 15%;
@@ -462,7 +461,6 @@ p {
     flex-wrap: nowrap;
     align-items: stretch;
     justify-content: flex-start;
-    white-space: nowrap;
     background-image: url("/src/tdor.jpg");
     width: 70%;
     margin-left: 15%;
@@ -493,7 +491,6 @@ p {
     flex-wrap: nowrap;
     align-items: stretch;
     justify-content: flex-start;
-    white-space: nowrap;
     background-image: url("/src/anewlegacy.png");
     width: 70%;
     margin-left: 15%;
@@ -531,7 +528,6 @@ p {
     flex-wrap: nowrap;
     align-items: stretch;
     justify-content: flex-start;
-    white-space: nowrap;
     background-image: url("/src/transhug.jpg");
     width: 70%;
     margin-left: 15%;
@@ -563,7 +559,6 @@ p {
     flex-wrap: nowrap;
     align-items: stretch;
     justify-content: flex-start;
-    white-space: nowrap;
     background-image: url("/src/transmeme.jpeg");
     width: 70%;
     margin-left: 15%;
@@ -595,7 +590,6 @@ p {
     flex-wrap: nowrap;
     align-items: stretch;
     justify-content: flex-start;
-    white-space: nowrap;
     background-image: url("/src/wild.jpeg");
     width: 70%;
     margin-left: 15%;
@@ -693,13 +687,15 @@ footer {
 }
 
 @media only screen and (max-width: 600px) {
+
     .logo {
-        left: 20%;
-        font-size: 1.6em;
+        left: 7.3em;
+        margin-top: 0; 
+        font-size: 1.8em;
     }
 
     #menu-bar {
-        width: 30px;
+        width: 35px;
         height: 10px;
     }
 
@@ -720,15 +716,16 @@ footer {
         transform: translateY(4px);
     }
 
-    .menu-bg {
-        z-index: 3;
-        /* width: 100%; */
-        height: 80%;
-        margin: 30px 0 20px 20px;
-        background: radial-gradient(ellipse at bottom, #C6BBED, #BA4B8F),
-            radial-gradient(ellipse at top, #FEB8E3, white);
-        border-radius: 50%;
-        transition: 0.3s ease;
+    .change #bar1 {
+        transform: translateY(4px) rotateZ(-45deg);
+    }
+    
+    .change #bar2 {
+        opacity: 0;
+    }
+    
+    .change #bar3 {
+        transform: translateY(-4px) rotateZ(45deg);
     }
 
     #topsocial {
@@ -737,45 +734,83 @@ footer {
 
     h1 { 
         text-align: center;
-        margin: 1.5em;
+        margin: 1em;
     }
 
     h2 {
+        font-size: 1em;
+    }
+
+    h2.article {
         word-wrap: break-word;
     }
 
     #articlecolumn {
         width: 100%;
+        word-wrap: break-word;
     }
 
     #article20gaff  {
         width: 100%;
         margin-left: 0px;
+        white-space: normal;
     }
 
     #article19tldr  {
         width: 100%;
         margin-left: 0px;
+        white-space: normal;
     }
 
     #article18galdem {
         width: 100%;
         margin-left: 0px;
         background-position: center;
+        white-space: normal;
+        color: black;
+    }
+
+    #article18galdem#hide1 {
+        color: white;
     }
 
     #article17wives {
         width: 100%;
         margin-left: 0px;
+        white-space: normal;
     }
 
     #article16reflect {
         width: 100%;
         margin-left: 0px;
+        white-space: normal;
     }
 
     #article15wild {
         width: 100%;
         margin-left: 0px;
+        white-space: normal;
+    }
+
+    #hr4 {
+        padding: 0px;
+        border-top: 1px solid pink;
+    }
+
+    #footerinfo {
+        flex-direction: column;
+
+    }
+
+    #footercomp {
+        font-size: 0.5em;
+        display: none;
+        text-align: center;
+    }
+
+    .footersocial {
+        font-size: 0.5em;
+        text-align: center;
+        margin: 2em;
     }
 }
