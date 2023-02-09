@@ -50,7 +50,7 @@ a:visited {
     color: black;
     padding-top: 10px;
     border-bottom: #1F2937;
-    height: auto;
+    height: 10em;
     /* position: fixed; */
 }
 
@@ -164,22 +164,24 @@ a:visited {
 }
 
 #menu {
-    z-index: 2;
+    z-index: 10;
 }
 
 #menu-bar {
     width: 45px;
     height: 40px;
     /* margin: 1%; */
+    z-index: 10;
 }
 
 .bar {
-    height: 5px;
+    height: 5px;            
     width: 80%;
     background-color: black;
     display: block;
     border-radius: 5px;
     transition: 0.3s ease;
+    z-index: 10;
 }
 
 #bar1 {
@@ -219,10 +221,11 @@ a:visited {
     top: 0;
     left: 0;
     position: absolute;
+    z-index: 10;
 }
 
 .menu-bg {
-    z-index: 1;
+    z-index: 10;
     width: 0;
     height: 30%;
     margin: 30px 0 20px 20px;
@@ -230,6 +233,7 @@ a:visited {
         radial-gradient(ellipse at top, #FEB8E3, white);
     border-radius: 50%;
     transition: 0.3s ease;
+    z-index: 10;
 }
 
 .change {
@@ -238,24 +242,29 @@ a:visited {
 
 .change .bar {
     background-color: white;
+    z-index: 10;
 }
 
 .change #bar1 {
     transform: translateY(4px) rotateZ(-45deg);
+    z-index: 10;
 }
 
 .change #bar2 {
     opacity: 0;
+    z-index: 10;
 }
 
 .change #bar3 {
     transform: translateY(-6px) rotateZ(45deg);
+    z-index: 10;
 }
 
 .change-bg {
     width: 45em;
     height: 40em;
     transform: translate(-60%, -30%);
+    z-index: 10;
 }
 
 .dropbtn {
@@ -264,18 +273,20 @@ a:visited {
     color: pink;
     font-family: 'Righteous';
     font-weight: 500;
+    z-index: 10;
 }
 
 .dropdown {
     position: relative;
     display: inline-block;
     transition: 0.5s ease;
+    z-index: 10;
   }
   
   .dropdown-content {
     display: none;
     position: absolute;
-    z-index: 2;
+    z-index: 10;
     width: 20em;
     height: 20em;
     margin: 30px 0 10px 40px;
@@ -283,6 +294,7 @@ a:visited {
         radial-gradient(ellipse at top, #FEB8E3, white);
     border-radius: 50%;
     transform: translate(-60%, -30%);
+    z-index: 10;
     
   }
   
@@ -290,8 +302,8 @@ a:visited {
     padding: 10px;
     margin: 15px 0 10px 80px;
     text-decoration: none;
-    /*  */
     display: block;
+    z-index: 10;
   }
   
   .dropdown-content a:hover {
@@ -299,16 +311,19 @@ a:visited {
     width: 6em;
     border-radius: 25%;
     color: hotpink;
+    z-index: 10; 
 }
   
   .dropdown:hover .dropdown-content {
     display: block;
+    z-index: 10;
 }
   
   .dropdown:hover .dropbtn {
     background-color: hotpink;
     visibility: none;
     transition: 0.5s ease;
+    z-index: 10;
 }
 
 #hr1 {
