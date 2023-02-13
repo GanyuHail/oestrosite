@@ -235,7 +235,7 @@ a:visited {
 
 .nav li a {
     color: white;
-    font-size: 20px;
+    font-size: 22px;
     text-decoration: none;
     z-index: 50;
 }
@@ -251,7 +251,6 @@ a:visited {
     left: 0;
     position: absolute;
     z-index: 5;
-  
 }
 
 .menu-bg {
@@ -263,7 +262,6 @@ a:visited {
         radial-gradient(ellipse at top, #FEB8E3, white);
     border-radius: 50%;
     transition: 0.3s ease;
-   
 }
 
 .change {
@@ -302,16 +300,7 @@ a:visited {
     color: pink;
     font-family: 'Righteous';
     font-weight: 500;
-    z-index: 12;
-}
-
-
-.dropbtn {
-    border: none;
-    background-color: transparent;
-    color: pink;
-    font-family: 'Righteous';
-    font-weight: 500;
+    white-space: none;
 }
 
 .dropdown {
@@ -323,30 +312,32 @@ a:visited {
 .dropdown-content {
     display: none;
     position: absolute;
+    padding-top: 80px;
     z-index: 2;
-    width: 20em;
-    height: 20em;
-    margin: 30px 0 10px 40px;
+    width: 18em;
+    height: 15em;
+    /* margin: 35px 0 20px 40px; */
     background: radial-gradient(ellipse at bottom, transparent, #FEB8E3),
         radial-gradient(ellipse at top, #FEB8E3, white);
-    border-radius: 50%;
-    transform: translate(-60%, -30%);
-
+    border-radius: 100%;
+    transform: translate(-10%, -20%);
+    color: white;
+    font-size: 22px;
 }
 
 .dropdown-content a {
-    padding: 10px;
-    margin: 15px 0 10px 80px;
+    padding: 1vh;
+    margin: 10px 0 20px 100px;
     text-decoration: none;
-    /*  */
     display: block;
+    color: white;
 }
 
 .dropdown-content a:hover {
     background-color: #ddd;
     width: 6em;
-    border-radius: 25%;
-    color: hotpink;
+    border-radius: 100%;
+    transform: translate(-10%, -20%);
 }
 
 .dropdown:hover .dropdown-content {
@@ -358,68 +349,6 @@ a:visited {
     visibility: none;
     transition: 0.5s ease;
 }
-/* body {
-    background-image: linear-gradient(140deg, #e2e2e2, #cdcdcd);
-    display: grid;
-    place-items: center;
-    font-family: "Lato", Arial, sans-serif;
-    height: 100vh;
-    margin: 0;
-}
-* {
-    box-sizing: border-box;
-} */
-svg {
-    display: none;
-}
-
-
-/* .dropdown {
-    position: relative;
-    display: inline-block;
-    transition: 0.5s ease;
-    z-index: 12;
-}
-
-.dropdown-content {
-    display: none;
-    position: absolute;
-    width: 20em;
-    height: 20em;
-    margin: 30px 0 10px 40px;
-    background: radial-gradient(ellipse at bottom, transparent, #FEB8E3),
-        radial-gradient(ellipse at top, #FEB8E3, white);
-    border-radius: 50%;
-    transform: translate(-60%, -30%);
-    z-index: 12;
-}
-
-.dropdown-content a {
-    padding: 10px;
-    margin: 15px 0 10px 80px;
-    text-decoration: none;
-    display: block;
-    z-index: 12;
-}
-
-.dropdown-content a:hover {
-    background-color: #ddd;
-    width: 6em;
-    border-radius: 25%;
-    color: hotpink;
-    z-index: 12;
-}
-
-.dropdown:hover .dropdown-content {
-    display: block;
-}
-
-.dropdown:hover .dropbtn {
-    background-color: hotpink;
-    visibility: none;
-    transition: 0.5s ease;
-    z-index: 11;
-} */
 
 #hr1 {
     display: block;
@@ -895,11 +824,11 @@ footer {
 @media only screen and (max-width: 600px) {
 
     #headerbg {
-        height: 2.8em;
+        height: 3.8em;
     }
 
     .header {
-        height: 2.8em;
+        height: 2.6em;
     }
 
     .rainbowcontainer {
@@ -957,6 +886,21 @@ footer {
         transform: translateY(-4px) rotateZ(45deg);
     }
 
+    .nav ul {
+        width: 1000px;
+        padding-top: 50px;
+    }
+
+    /* .nav li a {
+        font-size: 18px;
+    } */
+
+    .dropdown-content {
+        /* padding-top: 80px; */
+        height: 14em;
+        transform: translate(-10%, -20%);
+    }
+
     #topsocial {
         display: none;
     }
@@ -978,56 +922,11 @@ footer {
         word-wrap: break-word;
     }
 
-    #articlecolumn {
-        width: 100%;
-        word-wrap: break-word;
-    }
-
-    #article20gaff {
-        width: 100%;
-        margin-left: 0px;
-        white-space: normal;
-    }
-
-    #article19tldr {
-        width: 100%;
-        margin-left: 0px;
-        white-space: normal;
-    }
-
-    #article18galdem {
-        width: 100%;
-        margin-left: 0px;
-        background-position: center;
-        white-space: normal;
-        color: black;
-    }
-
-    #article18galdem#hide1 {
-        color: white;
-    }
-
-    #article17wives {
-        width: 100%;
-        margin-left: 0px;
-        white-space: normal;
-    }
-
-    #article16reflect {
-        width: 100%;
-        margin-left: 0px;
-        white-space: normal;
-    }
-
-    #article15wild {
-        width: 100%;
-        margin-left: 0px;
-        white-space: normal;
-    }
-
-    #hr4 {
-        padding: 0px;
-        border-top: 1px solid pink;
+    .articlemeat {
+        width: 5vh;
+        align-items: center;
+        text-align: center;
+        margin: 1px; 
     }
 
     #footerinfo {
