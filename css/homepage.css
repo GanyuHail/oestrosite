@@ -234,7 +234,7 @@ a:visited {
 
 .nav li a {
     color: white;
-    font-size: 20px;
+    font-size: 1.6vh;
     text-decoration: none;
     z-index: 50;
 }
@@ -301,16 +301,7 @@ a:visited {
     color: pink;
     font-family: 'Righteous';
     font-weight: 500;
-    z-index: 12;
-}
-
-
-.dropbtn {
-    border: none;
-    background-color: transparent;
-    color: pink;
-    font-family: 'Righteous';
-    font-weight: 500;
+    white-space: none;
 }
 
 .dropdown {
@@ -325,27 +316,28 @@ a:visited {
     z-index: 2;
     width: 20em;
     height: 20em;
-    margin: 30px 0 10px 40px;
+    /* margin: 35px 0 20px 40px; */
     background: radial-gradient(ellipse at bottom, transparent, #FEB8E3),
         radial-gradient(ellipse at top, #FEB8E3, white);
-    border-radius: 50%;
-    transform: translate(-60%, -30%);
-
+    border-radius: 100%;
+    transform: translate(-10%, -20%);
+    color: white;
+    font-size: 1.5vh;
 }
 
 .dropdown-content a {
-    padding: 10px;
-    margin: 15px 0 10px 80px;
+    padding: 1vh;
+    margin: 10px 0 20px 100px;
     text-decoration: none;
-    /*  */
     display: block;
+    color: white;
 }
 
 .dropdown-content a:hover {
     background-color: #ddd;
     width: 6em;
-    border-radius: 25%;
-    color: hotpink;
+    border-radius: 100%;
+    transform: translate(-10%, -20%);
 }
 
 .dropdown:hover .dropdown-content {
@@ -471,12 +463,14 @@ svg {
     background-image: -moz-linear-gradient(left, white, hotpink, white, #EBE6FD, #f3fbfe );
     background-image: -o-linear-gradient(left, white, hotpink, white, #EBE6FD, #f3fbfe);
     background-image: linear-gradient(to right, white, hotpink, white, #EBE6FD, #f3fbfe );
-  }
+    z-index: 1;
+}
   
   .rainbowcontainer {
     overflow: hidden;
     width: 100%;
     margin-top: 0;
+    z-index: 1;
   }
 
   .tophr {
@@ -521,12 +515,13 @@ h2 {
     margin: 0 auto;
 }
 
-#video {
+#introspan {
+    
     width: 100%;
     height: 400px;
     display: flex;
     justify-content: center;
-    background-image: linear-gradient(to right, white, #EBE6FD, black, black, white, #EBE6FD);
+    background-image: linear-gradient(to right, white, #EBE6FD, pink, white, #EBE6FD);
 }
 
 #hr4 {
@@ -591,6 +586,7 @@ p {
     color: #EFE7FD;
     transition: height 0.5s, padding-top 0.5s, padding-bottom 0.5s;
     word-wrap: break-word;
+    height: 15vh;
 }
 
 #article20gaff:hover {
@@ -631,6 +627,7 @@ p {
     color: #EFE7FD;
     transition: height 0.5s, padding-top 0.5s, padding-bottom 0.5s;
     word-wrap: break-word;
+    height: 15vh;
 }
 
 #article19tldr:hover {
@@ -661,6 +658,7 @@ p {
     color: #EFE7FD;
     transition: height 0.5s, padding-top 0.5s, padding-bottom 0.5s;
     word-wrap: break-word;
+    height: 15vh;
 }
 
 #container18 {
@@ -697,6 +695,7 @@ p {
     background-size: cover;
     color: pink;
     transition: height 0.5s, padding-top 0.5s, padding-bottom 0.5s;
+    height: 15vh;
 }
 
 #article17wives:hover {
@@ -728,6 +727,7 @@ p {
     background-size: cover;
     color: #EFE7FD;
     transition: height 0.5s, padding-top 0.5s, padding-bottom 0.5s;
+    height: 15vh;
 }
 
 #article16reflect:hover {
@@ -759,6 +759,7 @@ p {
     background-size: cover;
     color: hotpink;
     transition: height 0.5s, padding-top 0.5s, padding-bottom 0.5s;
+    height: 15vh;
 }
 
 #article15wild:hover {
