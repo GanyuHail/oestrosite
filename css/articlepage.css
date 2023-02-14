@@ -26,7 +26,7 @@ body {
     background: linear-gradient(-45deg, hotpink, white, #EBE6FD, #f3fbfe);
     background-size: 400% 400%;
     animation: gradient 15s ease infinite;
-    height: 200vh;
+    height: 220vh;
 }
 
 header { 
