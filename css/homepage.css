@@ -513,7 +513,7 @@ p {
     flex-wrap: nowrap;
     align-items: stretch;
     justify-content: flex-start;
-    background-image: url("/src/oestrovenus.png");
+    background-image: url("../src/oestrovenus.png");
     width: 70%;
     margin-left: 15%;
     margin-top: auto;
@@ -554,7 +554,7 @@ p {
     flex-wrap: nowrap;
     align-items: stretch;
     justify-content: flex-start;
-    background-image: url("/src/tdor.jpg");
+    background-image: url("../src/tdor.jpg");
     width: 70%;
     margin-left: 15%;
     margin-top: auto;
@@ -585,7 +585,7 @@ p {
     flex-wrap: nowrap;
     align-items: stretch;
     justify-content: flex-start;
-    background-image: url("/src/anewlegacy.png");
+    background-image: url("../src/anewlegacy.png");
     width: 70%;
     margin-left: 15%;
     margin-top: auto;
@@ -623,7 +623,7 @@ p {
     flex-wrap: nowrap;
     align-items: stretch;
     justify-content: flex-start;
-    background-image: url("/src/transhug.jpg");
+    background-image: url("../src/transhug.jpg");
     width: 70%;
     margin-left: 15%;
     margin-top: auto;
@@ -655,7 +655,7 @@ p {
     flex-wrap: nowrap;
     align-items: stretch;
     justify-content: flex-start;
-    background-image: url("/src/transmeme.jpeg");
+    background-image: url("../src/transmeme.jpeg");
     width: 70%;
     margin-left: 15%;
     margin-top: auto;
@@ -687,7 +687,7 @@ p {
     flex-wrap: nowrap;
     align-items: stretch;
     justify-content: flex-start;
-    background-image: url("/src/wild.jpeg");
+    background-image: url("../src/wild.jpeg");
     width: 70%;
     margin-left: 15%;
     margin-top: auto;
