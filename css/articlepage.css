@@ -492,10 +492,10 @@ h1.article {
 p {
     font-family: 'jost';
     text-align: justify;
-    display: flex;
+    /* display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: flex-start; */
 }
 
 /* #articlecolumn {
@@ -707,6 +707,10 @@ footer {
     padding-bottom: 2%;
 }
 
+p.footer{ 
+    display: flex;
+}
+
 #signup {
     font-family: 'EXE';
     text-align: left;
@@ -797,7 +801,7 @@ footer {
 }
 
 #author{
-    font-size: 1.2em !important;
+    font-size: 1.2em;
     display: block;
     text-align: left;
 }
@@ -906,12 +910,17 @@ footer {
     }
 
     h1 {
-        text-align: center;
-        margin: 1em;
+        text-align: left;
+        
+        font-size: 4vh;
     }
 
     h1.articlesheader {
         display: block;
+    }
+
+    #author {
+        font-size: 2.5vh;
     }
 
     h2 {
@@ -923,7 +932,7 @@ footer {
     }
 
     .articlemeat {
-        width: 5vh;
+        /* width: 5vh; */
         align-items: center;
         text-align: center;
         margin: 1px; 
